@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <cluster hostcount="1" sitesperhost="8"/>
+    <partition-detection>
+        <snapshot/>
+    </partition-detection>
+    <admin-mode adminstartup="false"/>
+    <heartbeat/>
+    <httpd enabled="true">
+        <jsonapi enabled="true"/>
+    </httpd>
+    <snapshot enabled="false"/>
+    <commandlog enabled="false">
+        <frequency/>
+    </commandlog>
+    <dr enabled="false"/>
+    <systemsettings>
+        <temptables maxsize="1500"/>
+        <snapshot/>
+        <elastic/>
+        <query timeout="3000"/>
+        <resourcemonitor>
+            <memorylimit/>
+        </resourcemonitor>
+    </systemsettings>
+    <security/>
+</deployment>
